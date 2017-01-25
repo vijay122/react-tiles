@@ -31,9 +31,11 @@ const ReactRpgPhoto = ({ url,text, padding, clickHandler = null }) => {
     hoverText : {
     top: '50px',
     position: 'relative',
-    paddingLeft: '10px',
-    backgroundColor: 'white',
+    padding: '10px',
+    backgroundColor: 'black',
     color: 'white',
+    textTransform: 'capitalize',
+    fontSize:'large'
     },
   };
 
@@ -41,7 +43,8 @@ const ReactRpgPhoto = ({ url,text, padding, clickHandler = null }) => {
     <div className="imageGridItem" style={styles.imageGridItem}>
       <a onClick={ clickHandler ? clickHandler.bind(this, url) : null }>
         <div className="imageWrapper" style={styles.imageWrapper}>
-        <p style={styles.imageGridItem}>{text}</p>
+        <p>
+        <label style={styles.hoverText}>{text}</label></p>
         </div>
       </a>
     </div>
