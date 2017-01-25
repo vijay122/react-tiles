@@ -21,7 +21,7 @@ const ReactRpgPhoto = ({ url,text, padding, clickHandler = null }) => {
     imageWrapper: {
       position: 'relative',
       width: '100%',
-      paddingBottom: '100%',
+      paddingBottom: '80%',
       backgroundImage: `url(${url})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
@@ -30,7 +30,10 @@ const ReactRpgPhoto = ({ url,text, padding, clickHandler = null }) => {
     },
     hoverText:{
     backgroundColor:'black',
-    color:'white'
+    color:'white',
+    paddingBottom:'2%',
+    paddingRight:'3%',
+    paddingLeft:'3%'
     }
   };
 

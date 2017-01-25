@@ -165,7 +165,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    imageWrapper: {
 	      position: 'relative',
 	      width: '100%',
-	      paddingBottom: '100%',
+	      paddingBottom: '80%',
 	      backgroundImage: 'url(' + url + ')',
 	      backgroundSize: 'cover',
 	      backgroundPosition: 'center center',
@@ -174,7 +174,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    hoverText: {
 	      backgroundColor: 'black',
-	      color: 'white'
+	      color: 'white',
+	      paddingBottom: '2%',
+	      paddingRight: '3%',
+	      paddingLeft: '3%'
 	    }
 	  };
 	
