@@ -175,9 +175,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    hoverText: {
 	      top: '50px',
 	      position: 'relative',
-	      paddingLeft: '10px',
-	      backgroundColor: 'white',
-	      color: 'white'
+	      padding: '10px',
+	      backgroundColor: 'black',
+	      color: 'white',
+	      textTransform: 'capitalize',
+	      fontSize: 'large'
 	    }
 	  };
 	
@@ -192,8 +194,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	        { className: 'imageWrapper', style: styles.imageWrapper },
 	        _react2['default'].createElement(
 	          'p',
-	          { style: styles.imageGridItem },
-	          text
+	          null,
+	          _react2['default'].createElement(
+	            'label',
+	            { style: styles.hoverText },
+	            text
+	          )
 	        )
 	      )
 	    )
