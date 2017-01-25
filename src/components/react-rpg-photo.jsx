@@ -29,13 +29,11 @@ const ReactRpgPhoto = ({ url,text, padding, clickHandler = null }) => {
       cursor: pointer,
     },
     hoverText : {
-    top: '50px',
     position: 'relative',
     padding: '10px',
     backgroundColor: 'black',
     color: 'white',
     textTransform: 'capitalize',
-    fontSize:'large'
     },
   };
 
