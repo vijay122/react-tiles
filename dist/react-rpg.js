@@ -173,13 +173,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	      cursor: pointer
 	    },
 	    hoverText: {
-	      top: '50px',
-	      position: 'relative',
-	      padding: '10px',
 	      backgroundColor: 'black',
 	      color: 'white',
-	      textTransform: 'capitalize',
-	      fontSize: 'large'
+	      paddingLeft: '3%',
+	      paddingRight: '3%',
+	      paddingBottom: '2%',
+	      paddingTop: '2%',
+	      fontSize: 'larger',
+	      top: '10px',
+	      position: 'relative'
 	    }
 	  };
 	

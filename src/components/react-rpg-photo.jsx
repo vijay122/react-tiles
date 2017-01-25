@@ -30,7 +30,14 @@ const ReactRpgPhoto = ({ url,text, padding, clickHandler = null }) => {
     },
     hoverText:{
     backgroundColor:'black',
-    color:'white'
+    color:'white',
+    paddingLeft:'3%',
+    paddingRight:'3%',
+    paddingBottom:'2%',
+        paddingTop:'2%',
+    fontSize:'larger',
+    top:'10px',
+    position:'relative'
     }
   };
 
