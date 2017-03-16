@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ReactRpgPhoto = ({ url,text, padding, clickHandler = null }) => {
+const ReactRpgPhoto = ({ url,text, padding, clickHandler = null, category }) => {
   const pointer = clickHandler ? 'pointer' : 'auto';
 
   var bgColors = { "Default": "#81b71a",
@@ -39,7 +39,7 @@ const ReactRpgPhoto = ({ url,text, padding, clickHandler = null }) => {
 
   return (
     <div className="imageGridItem" style={styles.imageGridItem}>
-      <a onClick={ clickHandler ? clickHandler.bind(this, url) : null }>
+      <a onClick={ clickHandler ? clickHandler.bind(this, category) : null }>
         <div className="imageWrapper" style={styles.imageWrapper}>
         <p>
         <label style={styles.hoverText}>{text}</label></p>
@@ -53,7 +53,8 @@ ReactRpgPhoto.propTypes = {
   url: React.PropTypes.string.isRequired,
   padding: React.PropTypes.number,
   clickHandler: React.PropTypes.func,
-  text:React.PropTypes.string
+  text:React.PropTypes.string,
+  category:React.PropTypes.string
 };
 
 export default ReactRpgPhoto;
