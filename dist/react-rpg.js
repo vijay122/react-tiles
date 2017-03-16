@@ -88,7 +88,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var columns = _ref$columns === undefined ? [1, 2, 3] : _ref$columns;
 	
 	  var imageNodes = imagesArray.map(function (arr, index) {
-	    return _react2['default'].createElement(_reactRpgPhoto2['default'], { key: index, url: arr.url, text: arr.text, columns: columns, padding: padding, clickHandler: arr.clickHandler });
+	    return _react2['default'].createElement(_reactRpgPhoto2['default'], { key: index, url: arr.url, text: arr.text, category: arr.category, columns: columns, padding: padding, clickHandler: arr.clickHandler });
 	  });
 	
 	  var cssBreakpoints = '\n    .imageGridItem { width: ' + Math.floor(100 / columns[0]) + '%; }\n\n    @media only screen and (min-width : 480px) {\n      .imageGridItem { width: ' + Math.floor(100 / columns[1]) + '%; }\n    }\n    @media only screen and (min-width : 992px) {\n      .imageGridItem { width: ' + Math.floor(100 / columns[2]) + '%; }\n    }\n  ';
@@ -144,6 +144,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var padding = _ref.padding;
 	  var _ref$clickHandler = _ref.clickHandler;
 	  var clickHandler = _ref$clickHandler === undefined ? null : _ref$clickHandler;
+	  var category = _ref.category;
 	
 	  var pointer = clickHandler ? 'pointer' : 'auto';
 	
@@ -186,7 +187,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    { className: 'imageGridItem', style: styles.imageGridItem },
 	    _react2['default'].createElement(
 	      'a',
-	      { onClick: clickHandler ? clickHandler.bind(undefined, url) : null },
+	      { onClick: clickHandler ? clickHandler.bind(undefined, category) : null },
 	      _react2['default'].createElement(
 	        'div',
 	        { className: 'imageWrapper', style: styles.imageWrapper },
@@ -208,7 +209,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  url: _react2['default'].PropTypes.string.isRequired,
 	  padding: _react2['default'].PropTypes.number,
 	  clickHandler: _react2['default'].PropTypes.func,
-	  text: _react2['default'].PropTypes.string
+	  text: _react2['default'].PropTypes.string,
+	  category: _react2['default'].PropTypes.string
 	};
 	
 	exports['default'] = ReactRpgPhoto;
